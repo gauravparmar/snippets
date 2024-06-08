@@ -21,9 +21,9 @@ class AddMissingColumnsPipe extends BaseLocationConfigurationExportPipe
         $this->columns = $data['columns'];
 
         foreach ($this->columns as $column) {
-            foreach ($locations as $lc => $value) {
+            foreach ($locations as $key => $value) {
                 if (! array_key_exists($column, $value)) {
-                    $locations[$lc][$column] = 'Not Applicable';
+                    $locations[$key][$column] = 'Not Applicable';
                 }
             }
         }

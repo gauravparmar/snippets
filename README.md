@@ -1,2 +1,0 @@
-# snippets
-Sample snippets
